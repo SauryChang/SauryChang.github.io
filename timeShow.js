@@ -21,10 +21,8 @@ function time(){
     // 当前秒
     var seconds = date.getSeconds();
     
-    // 由于字符串太长 分为两段来写，效果是一样的
-    var write_content = "现在的时间为：" + year + "年" + month + "月" + day + "日" + weekday;
-    // 说明：" "是空格，用来隔开星期和小时
-    write_content = write_content +  " " + hours + "时" + minutes + "分" + seconds + "秒";
+   // 由于字符串太长 分为两段来写，效果是一样的
+    var write_content = year + "年" + month + "月" + day + "日<br>" + hours + "时" + minutes + "分" + seconds + "秒<br>" + weekday; 
     
     // 将id为timeShow的标签 文本内容设置为write_content字符串的内容
     document.getElementById("timeShow").innerHTML = write_content;
